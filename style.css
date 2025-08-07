@@ -1,20 +1,23 @@
+
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    color: white;
     background: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url('assets/wayanad.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
 }
 
 .container {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 30px;
     border-radius: 15px;
     max-width: 500px;
@@ -22,32 +25,42 @@ body {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 2.2em;
     margin-bottom: 20px;
-    color: #fff;
+    color: #f8f8f8;
+    text-shadow: 1px 1px 3px #000;
 }
 
 #countdown {
     font-size: 2.5em;
     font-weight: bold;
-    color: #ffcc00;
     margin: 20px 0;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px #000;
     font-family: 'Courier New', monospace;
 }
 
 .location {
     font-style: italic;
     margin-top: 20px;
-    color: #ccc;
+    color: #ddd;
 }
 
-#share-button {
-    margin-top: 20px;
-    display: inline-block;
-    background-color: #25D366;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: bold;
+#playMusicBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 600px) {
+    h1 { font-size: 1.8em; }
+    #countdown { font-size: 2em; }
+    .container { padding: 20px; width: 80%; }
 }

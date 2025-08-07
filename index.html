@@ -1,23 +1,23 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Countdown to Wayanad Adventure</title>
+    <title>Wayanad Countdown</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <audio id="adventure-sound" src="assets/adventure.mp3" preload="auto"></audio>
-
     <div class="container">
-        <h1>Countdown to Wayanad Trip</h1>
+        <h1>Countdown to Tomorrow's Adventure</h1>
         <div id="countdown">Calculating...</div>
         <div class="location">Wayanad, Kerala</div>
-
-        <!-- Share button -->
-        <a id="share-button" href="#" target="_blank">Share on WhatsApp</a>
     </div>
-
+    <button id="playMusicBtn" title="Play Music">🎵</button>
+    <audio id="bgMusic" loop>
+        <source src="assets/adventure.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
     <script src="script.js"></script>
 </body>
 </html>
